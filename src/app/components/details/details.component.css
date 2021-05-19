@@ -1,0 +1,10 @@
+h1{
+  margin-bottom: 30px;
+}
+thead{
+  background: #eee;
+}
+.btn{
+  margin: 0 3px;
+  border-radius: 0;
+}

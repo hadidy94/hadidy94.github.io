@@ -1,0 +1,30 @@
+<h1>Users Details</h1>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Mail</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Edite</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <th>{{user.name}}</th>
+        <td>{{user.cname}} {{i}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>
+          <a class="btn btn-primary" href="/edit/{{user.id}}">edit</a>
+
+        </td>
+
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>

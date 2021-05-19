@@ -9,18 +9,18 @@ export class UsersService {
   constructor(private http: HttpClient) {  }
 
   public getAllUser(){
-    return this.http.get('/api/users');
+    return this.http.get('https://my-json-server.typicode.com/hadidy94/db/users');
   }
   getById(id){
-    return this.http.get(`/api/users/${id}`)
+    return this.http.get(`https://my-json-server.typicode.com/hadidy94/db/users/${id}`)
   }
   public addUser(value){
-    return this.http.post('/api/users', {...value})
+    return this.http.post('https://my-json-server.typicode.com/hadidy94/db/users', {...value})
   }
   updateUser(id,value){
-    return this.http.put(`/api/users/${id}`,{...value})
+    return this.http.put(`https://my-json-server.typicode.com/hadidy94/db/users/${id}`,{...value})
   }
   deleteUser(id){
-    return this.http.delete(`/api/users/${id}`)
+    return this.http.delete(`https://my-json-server.typicode.com/hadidy94/db/users/${id}`)
   }
 }

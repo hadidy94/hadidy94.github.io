@@ -1,5 +1,6 @@
 {
   "name": "task",
+  "Homepage":"https://hadidy94.github.io",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "api": "json-server api/db.json --routes api/routes.json --no-cors=true"
+    "api": "json-server api/db.json --routes api/routes.json --no-cors=true",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {

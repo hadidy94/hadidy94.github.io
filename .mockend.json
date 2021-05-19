@@ -1,0 +1,9 @@
+{
+  "users": {
+    "id": "int",
+    "name": "string",
+    "cname": "string",
+    "phone": "string",
+    "email": "string"
+  }
+}
